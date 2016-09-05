@@ -44,7 +44,7 @@ do
     # convert kb to mb
     total=$(($total/1024))
 
-    echo ${t} ${total} >> usage.txt 
+    echo ${t} ${total} >> usage.txt
 
     sleep 10
 done
