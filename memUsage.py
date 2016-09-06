@@ -8,7 +8,7 @@ data = np.loadtxt('usage.txt')
 
 pl.plot(data[:,0],data[:,1])
 
-pl.title('cpu usage of xxx')
+pl.title('Memory usage of xxx')
 pl.xlabel('time')
 pl.ylabel('mem')
 

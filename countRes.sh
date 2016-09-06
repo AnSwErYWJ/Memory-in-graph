@@ -21,14 +21,6 @@ do
     
     for i in $pids
     do
-        # get time
-        h=$(date +%k)
-        m=$(date +%M)
-        s=$(date +%S)
-        m=`awk 'BEGIN{printf "%.4f",('$m'/60)}'`
-        s=`awk 'BEGIN{printf "%.4f",('$s'/3600)}'`
-        t=`awk 'BEGIN{printf "%.4f\n",('$m'+'$s'+'$h')}'`
-        #echo $s $m $h $t
         
         # display content
         line=`cat /proc/$i/status | grep "VmRSS" | cut -d ":" -f2 `
@@ -40,6 +32,16 @@ do
 
         total=$(($total+$value))
     done
+    
+    # get time
+    h=$(date +%H)
+    m=$(date +%M)
+    s=$(date +%S)
+    h=`awk 'BEGIN{printf "%.4f",'$h'}'`
+    m=`awk 'BEGIN{printf "%.4f",('$m'/60)}'`
+    s=`awk 'BEGIN{printf "%.4f",('$s'/3600)}'`
+    t=`awk 'BEGIN{printf "%.4f\n",('$m'+'$s'+'$h')}'`
+    #echo $s $m $h $t
 
     # convert kb to mb
     total=$(($total/1024))
