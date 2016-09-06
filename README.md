@@ -48,7 +48,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 Download project :
 ```
-$ git clone git@github.com:AnSwErYWJ/matplotlib.git
+$ git clone git@github.com:AnSwErYWJ/Memory-in-graph.git
 ```
 
 ## Usage
