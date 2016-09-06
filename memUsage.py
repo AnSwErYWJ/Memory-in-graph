@@ -6,7 +6,7 @@ import pylab as pl
 
 data = np.loadtxt('usage.txt')
 
-pl.plot(data[:,0],data[:,1])
+pl.plot(data[:,0],data[:,1],'r')
 
 pl.title('Memory usage of xxx')
 pl.xlabel('time')
