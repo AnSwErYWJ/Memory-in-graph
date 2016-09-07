@@ -14,6 +14,6 @@ pl.ylabel('mem')
 
 # x,y limits
 #pl.xlim(0.0000,23.0000)
-#pl.ylim(0.0,30.)
+pl.ylim(0.0,30.)
 
 pl.savefig('result.png', format='png')

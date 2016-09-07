@@ -13,7 +13,8 @@ if [ $? -ne 0 ];then
     exit
 fi
 
-: > usage.txt
+: > usage.txt # for graph
+echo "time        memory" > raw.log # for user check
 
 while :
 do
@@ -37,16 +38,17 @@ do
     h=$(date +%H)
     m=$(date +%M)
     s=$(date +%S)
-    h=`awk 'BEGIN{printf "%.4f",'$h'}'`
-    m=`awk 'BEGIN{printf "%.4f",('$m'/60)}'`
-    s=`awk 'BEGIN{printf "%.4f",('$s'/3600)}'`
-    t=`awk 'BEGIN{printf "%.4f\n",('$m'+'$s'+'$h')}'`
+    H=`awk 'BEGIN{printf "%.4f",'$h'}'`
+    M=`awk 'BEGIN{printf "%.4f",('$m'/60)}'`
+    S=`awk 'BEGIN{printf "%.4f",('$s'/3600)}'`
+    t=`awk 'BEGIN{printf "%.4f\n",('$M'+'$S'+'$H')}'`
     #echo $s $m $h $t
 
     # convert kb to mb
     total=$(($total/1024))
 
     echo ${t} ${total} >> usage.txt
+    echo ${h}:${m}:${s} "   "${total}m >> raw.log
 
     sleep 10
 done

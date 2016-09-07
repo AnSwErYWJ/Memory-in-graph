@@ -52,10 +52,12 @@ $ git clone git@github.com:AnSwErYWJ/Memory-in-graph.git
 ```
 
 ## Usage
-Count memory usage, generate ``usage.txt`` :
+Count memory usage, generate ``usage.txt`` and ``raw.log`` :
 ```
 $ sh countRes.sh <program-name>
 ```
+> ``usage.txt`` is used for graph,``raw.log`` is used for user.
+
 Then, generate ``result.png`` :
 ```
 $ ./memUsage.py
