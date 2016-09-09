@@ -60,7 +60,7 @@ $ sh countRes.sh <program-name>
 
 Then, generate ``result.png`` :
 ```
-$ ./memUsage.py
+$ python memUsage.py <pathname> <graphname>
 ```
 
 ## Reference
