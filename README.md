@@ -62,6 +62,8 @@ Then, generate ``result.png`` :
 ```
 $ python memUsage.py <pathname> <graphname>
 ```
+![result.png](https://github.com/AnSwErYWJ/Memory-in-graph/blob/master/result.png)
+
 
 ## Reference
 + [matplotlib安装](http://www.cnblogs.com/ouzi/archive/2012/09/29/2708442.html)
