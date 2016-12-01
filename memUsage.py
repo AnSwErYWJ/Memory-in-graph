@@ -17,6 +17,7 @@ if len(sys.argv) != 3 :
 # load file
 data = np.loadtxt(sys.argv[1])
 
+# draw
 pl.plot(data[:,0],data[:,1],'r')
 
 # set title
@@ -25,7 +26,7 @@ pl.xlabel('time')
 pl.ylabel('mem')
 
 # x,y limits
-#pl.xlim(0.0000,23.0000)
+#pl.xlim(0.0000,23.0000) # depends on usage.txt
 pl.ylim(0.0,30.)
 
 pl.savefig(sys.argv[2], format='png')
