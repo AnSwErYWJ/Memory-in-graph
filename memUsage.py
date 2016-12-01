@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # coding=utf-8
 
+#import matplotlib as mpl
 import numpy as np
 import pylab as pl
 import sys
@@ -10,13 +11,16 @@ if len(sys.argv) != 3 :
     print "Usage: sh memUsage.py <filepath> <graphpath>"
     sys.exit(-1)
 
+#mpl.rcParams['font.sans-serif']=['SimHei'] # display chinese
+#mpl.rcParams['axes.unicode_minus']=False # display '-'
+
 # load file
 data = np.loadtxt(sys.argv[1])
 
 pl.plot(data[:,0],data[:,1],'r')
 
 # set title
-pl.title('Memory usage of xxx')
+pl.title('memory of xxx')
 pl.xlabel('time')
 pl.ylabel('mem')
 
