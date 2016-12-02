@@ -68,6 +68,8 @@ $ python memUsage.py <pathname> <graphname>
 ## Reference
 + [matplotlib安装](http://www.cnblogs.com/ouzi/archive/2012/09/29/2708442.html)
 + [Python图表绘制：matplotlib绘图库入门](http://www.cnblogs.com/wei-li/archive/2012/05/23/2506940.html)
++ [matplotlib-绘制精美的图表](http://old.sebug.net/paper/books/scipydoc/matplotlib_intro.html)
++ [Python--matplotlib绘图可视化知识点整理](https://segmentfault.com/a/1190000005104723#articleHeader13)
 + [Shell脚本浮点运算](http://answerywj.com/2016/09/05/Shell%E8%84%9A%E6%9C%AC%E6%B5%AE%E7%82%B9%E8%BF%90%E7%AE%97/)
 
 ## About me
